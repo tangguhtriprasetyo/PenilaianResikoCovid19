@@ -1,4 +1,4 @@
-# Tugas Besar UAS RSBK oleh Kelompok:
+# Tugas Besar UAS RSBK oleh Kelompok 32:
 1. Tangguh Tri Prasetyo (21120117130082)
 2. Afrizal Bagas Santoso (21120117130075)
 
