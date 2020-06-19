@@ -6,7 +6,7 @@
 Aplikasi ini merupakan aplikasi berbasis android. Menggunakan beberapa komponen reusable yang telah disediakan oleh google dan beberapa komponen buatan sendiri.
 
 ### SCREENSHOT
-![Alt text](/screenshot/rsbk2.jpg?raw=true "Tubes RSBK")
+![Alt text](/screenshot/rsbk2.jpg?raw=true "Tubes RSBK") {:height="20%" width="20%"}
 ![Alt text](/screenshot/rsbk3.jpg?raw=true "Tubes RSBK")
 ![Alt text](/screenshot/rsbk4.jpg?raw=true "Tubes RSBK")
 ![Alt text](/screenshot/rsbk5.jpg?raw=true "Tubes RSBK")
@@ -15,4 +15,3 @@ Aplikasi ini merupakan aplikasi berbasis android. Menggunakan beberapa komponen 
 ![Alt text](/screenshot/rsbk8.jpg?raw=true "Tubes RSBK")
 ![Alt text](/screenshot/rsbk9.jpg?raw=true "Tubes RSBK")
 ![Alt text](/screenshot/rsbk10.jpg?raw=true "Tubes RSBK")
-![Alt text](/screenshot/rsbk11.jpg?raw=true "Tubes RSBK")
