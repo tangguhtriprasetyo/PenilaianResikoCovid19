@@ -6,12 +6,13 @@
 Aplikasi ini merupakan aplikasi berbasis android. Menggunakan beberapa komponen reusable yang telah disediakan oleh google dan beberapa komponen buatan sendiri.
 
 ### SCREENSHOT
-![Alt text](/screenshot/rsbk2.jpg?raw=true "Tubes RSBK") <!-- .element height="50%" width="50%" -->
-![Alt text](/screenshot/rsbk3.jpg?raw=true "Tubes RSBK")
-![Alt text](/screenshot/rsbk4.jpg?raw=true "Tubes RSBK")
-![Alt text](/screenshot/rsbk5.jpg?raw=true "Tubes RSBK")
-![Alt text](/screenshot/rsbk6.jpg?raw=true "Tubes RSBK")
-![Alt text](/screenshot/rsbk7.jpg?raw=true "Tubes RSBK")
-![Alt text](/screenshot/rsbk8.jpg?raw=true "Tubes RSBK")
-![Alt text](/screenshot/rsbk9.jpg?raw=true "Tubes RSBK")
-![Alt text](/screenshot/rsbk10.jpg?raw=true "Tubes RSBK")
+<img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk1.jpg" width="320" height="600">
+<img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk2.jpg" width="320" height="600">
+<img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk3.jpg" width="320" height="600">
+<img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk4.jpg" width="320" height="600">
+<img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk5.jpg" width="320" height="600">
+<img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk6.jpg" width="320" height="600">
+<img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk7.jpg" width="320" height="600">
+<img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk8.jpg" width="320" height="600">
+<img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk9.jpg" width="320" height="600">
+<img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk10.jpg" width="320" height="600">
