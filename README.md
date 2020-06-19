@@ -12,6 +12,7 @@ Aplikasi ini merupakan aplikasi berbasis android. Menggunakan beberapa komponen 
 <img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk4.jpg" width="320" height="600">
 <img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk6.jpg" width="320" height="600">
 <img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk7.jpg" width="320" height="600">
+<img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk11.jpg" width="320" height="600">
 <img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk8.jpg" width="320" height="600">
 <img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk5.jpg" width="320" height="600">
 <img src="https://github.com/tangguhtriprasetyo/PenilaianResikoCovid19/blob/master/screenshot/rsbk9.jpg" width="320" height="600">
