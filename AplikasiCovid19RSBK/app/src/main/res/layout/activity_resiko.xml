@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Resiko">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/dokter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/TextContent.Large"
+            android:layout_marginTop="32dp"
+            android:text="@string/resiko_title"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/TextContent.Subtitle"
+            android:layout_marginTop="8dp"
+            android:text="@string/resiko_subtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="36dp"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gejala_1"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/gejala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_gejala1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/pernah"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_gejala2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/tidak_pernah"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/riwayat"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/riwayat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_riwayat1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/iya"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_riwayat2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/tidak"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/radius"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/radius"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_radius1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/ada"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_radius2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/tidak_ada"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/jenazah"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/jenazah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_jenazah1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/pernah"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_jenazah2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/tidak_pernah"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/desinfektan"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/desinfektan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_desinfektan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/iya"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_desinfektan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/tidak"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/physical_distancing"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/distancing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_distancing1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/iya"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_distancing2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/tidak"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/riwayat_kontak"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/kerumunan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_kerumunan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/pernah"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_kerumunan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/tidak_pernah"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/karantina"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/karantina"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_karantina1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/iya"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_karantina2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/tidak"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:text="@string/pencegahan"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/cegah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_marginBottom="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radio_cegah1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/iya"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/radio_cegah2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:onClick="onRadioButtonClicked"
+                    android:text="@string/tidak"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bg_btn_blue"
+                android:text="Lihat Hasil"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>

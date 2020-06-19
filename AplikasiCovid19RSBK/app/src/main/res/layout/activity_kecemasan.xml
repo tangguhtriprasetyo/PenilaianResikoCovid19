@@ -1,0 +1,696 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Resiko">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/dokter"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/TextContent.Large"
+            android:layout_marginTop="32dp"
+            android:text="@string/kecemasan_title"
+            android:textStyle="bold"
+            android:textSize="28dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <TextView
+            android:id="@+id/textView4"
+            style="@style/TextContent.Subtitle"
+            android:layout_marginTop="8dp"
+            android:text="@string/resiko_subtitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/textView5"
+            style="@style/TextContent.Subtitle"
+            android:layout_width="372dp"
+            android:layout_height="51dp"
+            android:layout_margin="@dimen/activity_vertical_margin"
+            android:gravity="center"
+            android:padding="@dimen/activity_horizontal_padding"
+            android:text="@string/note_kecemasan"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ansietas"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/ansietas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/ansietas0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="0"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/ansietas1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="1"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/ansietas2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="2"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/ansietas3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="3"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/ansietas4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="4"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tegang"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/tegang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/tegang0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="0"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/tegang1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="1"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/tegang2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="2"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/tegang3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="3"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/tegang4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="4"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:text="@string/takut"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/takut"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/takut0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="0"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/takut1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="1"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/takut2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="2"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/takut3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="3"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/takut4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="4"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gangguan"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/gangguan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/gangguan0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="0"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/gangguan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="1"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/gangguan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="2"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/gangguan3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="3"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/gangguan4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="4"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/depresi"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/depresi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/depresi0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="0"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/depresi1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="1"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/depresi2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="2"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/depresi3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="3"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/depresi4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="4"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/somatik"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/somatik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/somatik0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="0"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/somatik1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="1"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/somatik2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="2"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/somatik3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="3"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/somatik4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="4"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/kardio"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/kardio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/kardio0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="0"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/kardio1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="1"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/kardio2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="2"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/kardio3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="3"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/kardio4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="4"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/respiratori"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/respiratori"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/respiratori0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="0"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/respiratori1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="1"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/respiratori2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="2"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/respiratori3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="3"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/respiratori4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="4"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/gastro"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/gastro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/gastro0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="0"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/gastro1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="1"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/gastro2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="2"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/gastro3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="3"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/gastro4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="4"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/otonom"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/otonom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/otonom0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="0"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/otonom1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="1"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/otonom2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="2"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/otonom3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="3"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/otonom4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="4"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/tingkah"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <RadioGroup
+                android:id="@+id/tingkah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/activity_vertical_margin"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/tingkah0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="0"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/tingkah1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="1"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/tingkah2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="2"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/tingkah3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="3"
+                    android:textSize="14sp" />
+
+                <RadioButton
+                    android:id="@+id/tingkah4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/activity_horizontal_padding"
+                    android:text="4"
+                    android:textSize="14sp" />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_submit_kecemasan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginBottom="24dp"
+                android:background="@drawable/bg_btn_blue"
+                android:text="Lihat Hasil"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</ScrollView>
